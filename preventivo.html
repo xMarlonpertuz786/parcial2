@@ -13,7 +13,7 @@
   <header>
     <div class="header-top">
       <div class="firma">Marlon Pertuz</div>
-      <img src="img/bandera-de-colombia.png" alt="Bandera de Colombia" class="bandera">
+      <img src="img/bandera-colombia.png" alt="Bandera de Colombia" class="bandera">
       <button id="darkModeToggle" aria-label="Alternar modo oscuro">
         <i class="fas fa-moon"></i>
       </button>
@@ -235,10 +235,11 @@
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <p class="newsletter">Suscríbete a tips de mantenimiento</p>
-        <form class="mini-form">
-          <input type="email" placeholder="Tu correo" required>
+        <form class="mini-form" id="newsletterForm">
+          <input type="email" placeholder="Tu correo" required id="newsletterEmail">
           <button type="submit">OK</button>
         </form>
+        <p class="form-message" id="newsletterMessage"></p>
       </div>
     </div>
     
