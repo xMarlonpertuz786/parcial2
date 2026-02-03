@@ -13,7 +13,7 @@
   <header>
     <div class="header-top">
       <div class="firma">Marlon Pertuz</div>
-      <img src="img/bandera-de-colombia.png" alt="Bandera de Colombia" class="bandera">
+      <img src="img/bandera-colombia.png" alt="Bandera de Colombia" class="bandera">
       <button id="darkModeToggle" aria-label="Alternar modo oscuro">
         <i class="fas fa-moon"></i>
       </button>
@@ -40,17 +40,17 @@
     <!-- Sección Hero/Principal con slider básico -->
     <section class="hero">
       <div class="slider">
-        <div class="slide active">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/limpieza-interna.jpg');">
           <h2>Mantenimiento Profesional de Computadores</h2>
           <p>Alarga la vida útil de tu equipo y mejora su rendimiento con nuestros servicios especializados.</p>
           <a href="contacto.html" class="btn-hero">Solicitar Servicio</a>
         </div>
-        <div class="slide">
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/diagnostico-hardware.jpg');">
           <h2>Diagnóstico Gratuito</h2>
           <p>Te hacemos un diagnóstico completo sin costo para identificar problemas en tu computador.</p>
           <a href="contacto.html" class="btn-hero">Agendar Diagnóstico</a>
         </div>
-        <div class="slide">
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/optimizacion-sistema.jpg');">
           <h2>Limpieza y Optimización</h2>
           <p>Eliminamos polvo, actualizamos software y optimizamos el sistema para máximo rendimiento.</p>
           <a href="preventivo.html" class="btn-hero">Ver Servicios</a>
@@ -106,6 +106,34 @@
         <div class="video-wrapper">
           <iframe width="360" height="215" src="https://www.youtube.com/embed/uunnO9yZCYk?si=3MQM4yDjyHWSwDXf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <p class="video-desc">Limpieza interna de computadoras</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería de imágenes destacadas -->
+    <section class="highlight-gallery">
+      <h2><i class="fas fa-camera"></i> Nuestros Trabajos</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/procesador.jpg" alt="Limpieza de procesador">
+          <div class="gallery-overlay">
+            <h3>Limpieza de CPU</h3>
+            <p>Cambio de pasta térmica y limpieza de disipador</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/tarjeta-madre.jpg" alt="Mantenimiento de tarjeta madre">
+          <div class="gallery-overlay">
+            <h3>Revisión de Motherboard</h3>
+            <p>Limpieza de slots y verificación de componentes</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fuente-poder.jpg" alt="Limpieza de fuente de poder">
+          <div class="gallery-overlay">
+            <h3>Fuente de Poder</h3>
+            <p>Limpieza interna y verificación de voltajes</p>
+          </div>
         </div>
       </div>
     </section>
