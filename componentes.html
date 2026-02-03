@@ -2,43 +2,260 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Componentes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes del PC | Hardware y Software</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<header>
-  <div class="firma">Marlon Pertuz</div>
-  <img src="img/bandera de colombia 1.png" alt="Bandera de Colombia" class="bandera">
-</header>
 
 <body>
+  <!-- Header consistente -->
   <header>
-    <h1>Redes de Computadoras</h1>
+    <div class="header-top">
+      <div class="firma">Marlon Pertuz</div>
+      <img src="img/bandera-de-colombia.png" alt="Bandera de Colombia" class="bandera">
+      <button id="darkModeToggle" aria-label="Alternar modo oscuro">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+    <h1>Componentes del Computador</h1>
+    
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="funcionamientos.html">Funcionamiento</a></li>
-        <li><a href="componentes.html">Componentes</a></li>
-        <li><a href="tipos.html">Tipos de redes</a></li>
-        <li><a href="contactos.html">Contacto</a></li>
-        <li><a href="http://127.0.0.1:5501/index.html" target="_blank">Proyecto</a> </li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="preventivo.html"><i class="fas fa-shield-alt"></i> Preventivo</a></li>
+        <li><a href="correctivo.html"><i class="fas fa-tools"></i> Correctivo</a></li>
+        <li><a href="componentes.html" class="active"><i class="fas fa-microchip"></i> Componentes</a></li>
+        <li><a href="tipos.html"><i class="fas fa-network-wired"></i> Tipos</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
       </ul>
+      <button class="menu-toggle" aria-label="Menú móvil">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Componentes de una red</h2>
-      <ul>
-        <li>Router</li>
-        <li>Switch</li>
-        <li>Tarjetas de red</li>
-        <li>Medios de transmisión (cables, WiFi)</li>
-      </ul>
+    <!-- Introducción -->
+    <section class="intro-section">
+      <h2><i class="fas fa-laptop"></i> Componentes Hardware y Software</h2>
+      <p>Para realizar un mantenimiento efectivo, es esencial conocer los principales componentes de un computador. Estos se dividen en <strong>hardware</strong> (partes físicas) y <strong>software</strong> (programas y sistema operativo). Aquí te presentamos una descripción detallada de cada uno.</p>
     </section>
+
+    <!-- Sección con acordeón/FAQ (Cumple requisito del proyecto) -->
+    <section class="accordion-section">
+      <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes sobre Componentes</h2>
+      
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>¿Cuál es el componente más crítico para el mantenimiento?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>El <strong>disco duro/SSD</strong> y el <strong>sistema de refrigeración</strong> son los más críticos. El primero almacena todos tus datos y el segundo previene el sobrecalentamiento que puede dañar otros componentes.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>¿Cada cuánto debo cambiar la pasta térmica del procesador?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Se recomienda cambiar la pasta térmica cada <strong>1-2 años</strong> dependiendo del uso. Si notas que las temperaturas del CPU están más altas de lo normal, es una señal para renovarla.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>¿Qué componentes son más propensos a fallar?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Por orden de frecuencia: 1) Ventiladores/refrigeración, 2) Fuente de poder, 3) Disco duro mecánico (HDD), 4) Batería CMOS, 5) Puertos USB por uso excesivo.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>¿Necesito herramientas especiales para limpiar componentes?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Sí, básicas pero importantes: aire comprimido, brocha antiestática, pulsera antiestática, limpiador de contactos electrónicos y pasta térmica de calidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería de componentes con hover (Cumple requisito del proyecto) -->
+    <section class="gallery-section">
+      <h2><i class="fas fa-images"></i> Galería de Componentes</h2>
+      <p>Haz hover sobre cada imagen para ver información de mantenimiento específica:</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/procesador.jpg" alt="Procesador (CPU)">
+          <div class="gallery-overlay">
+            <h3>Procesador (CPU)</h3>
+            <p><strong>Mantenimiento:</strong> Limpiar ventilador, cambiar pasta térmica cada 1-2 años, evitar overclocking sin refrigeración adecuada.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/tarjeta-madre.jpg" alt="Tarjeta madre (Motherboard)">
+          <div class="gallery-overlay">
+            <h3>Tarjeta Madre</h3>
+            <p><strong>Mantenimiento:</strong> Limpiar slots y contactos, verificar capacitores inflados, actualizar BIOS periódicamente.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/ram.jpg" alt="Memoria RAM">
+          <div class="gallery-overlay">
+            <h3>Memoria RAM</h3>
+            <p><strong>Mantenimiento:</strong> Limpiar contactos con alcohol isopropílico, asegurar correcta inserción, verificar compatibilidad.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/disco-duro.jpg" alt="Disco duro (HDD/SSD)">
+          <div class="gallery-overlay">
+            <h3>Disco Duro</h3>
+            <p><strong>Mantenimiento:</strong> Desfragmentar HDD (no SSD), monitorear S.M.A.R.T., mantener al menos 15% libre.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/fuente-poder.jpg" alt="Fuente de poder">
+          <div class="gallery-overlay">
+            <h3>Fuente de Poder</h3>
+            <p><strong>Mantenimiento:</strong> Limpiar ventilador y rejillas, verificar voltajes, no sobrecargar conexiones.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/tarjeta-video.jpg" alt="Tarjeta de video (GPU)">
+          <div class="gallery-overlay">
+            <h3>Tarjeta de Video</h3>
+            <p><strong>Mantenimiento:</strong> Limpiar disipador, actualizar drivers, monitorear temperaturas bajo carga.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabla comparativa de componentes (Cumple requisito del proyecto) -->
+    <section class="table-section">
+      <h2><i class="fas fa-table"></i> Comparativa: Componentes y su Mantenimiento</h2>
+      
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Componente</th>
+              <th>Frecuencia Mantenimiento</th>
+              <th>Herramientas Necesarias</th>
+              <th>Señales de Problema</th>
+              <th>Nivel Dificultad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ventiladores</strong></td>
+              <td>Cada 3 meses</td>
+              <td>Aire comprimido, brocha</td>
+              <td>Ruido excesivo, vibración</td>
+              <td>Fácil</td>
+            </tr>
+            <tr>
+              <td><strong>Disco Duro (HDD)</strong></td>
+              <td>Cada 6 meses</td>
+              <td>Software de diagnóstico</td>
+              <td>Sonidos click, lentitud</td>
+              <td>Intermedio</td>
+            </tr>
+            <tr>
+              <td><strong>Procesador (CPU)</strong></td>
+              <td>Cada 1-2 años</td>
+              <td>Pasta térmica, alcohol isopropílico</td>
+              <td>Sobrecalentamiento, apagones</td>
+              <td>Intermedio</td>
+            </tr>
+            <tr>
+              <td><strong>Memoria RAM</strong></td>
+              <td>Cada año</td>
+              <td>Goma de borrar, alcohol isopropílico</td>
+              <td>Pantallazos azules, reinicios</td>
+              <td>Fácil</td>
+            </tr>
+            <tr>
+              <td><strong>Fuente de Poder</strong></td>
+              <td>Cada 6 meses</td>
+              <td>Brocha, aspiradora pequeña</td>
+              <td>Olores quemados, inestabilidad</td>
+              <td>Difícil</td>
+            </tr>
+            <tr>
+              <td><strong>Tarjeta Madre</strong></td>
+              <td>Cada año</td>
+              <td>Brocha antiestática, limpiador de contactos</td>
+              <td>No enciende, puertos fallan</td>
+              <td>Difícil</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note"><i class="fas fa-info-circle"></i> Nota: "Nivel de dificultad" se refiere a la complejidad para realizar mantenimiento físico.</p>
+    </section>
+
+    <!-- Botón "Volver arriba" -->
+    <button id="backToTop" aria-label="Volver al inicio">
+      <i class="fas fa-chevron-up"></i>
+    </button>
   </main>
 
+  <!-- Footer consistente -->
   <footer>
-    <p>&copy; 2025 Redes de Computadoras @unibarranquilla.edu.co</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Componentes PC</h3>
+        <p>Conocer cada componente es el primer paso para un mantenimiento efectivo. La prevención comienza con el entendimiento.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Componentes Críticos</h3>
+        <ul>
+          <li><a href="#cpu">Procesador</a></li>
+          <li><a href="#motherboard">Tarjeta Madre</a></li>
+          <li><a href="#ram">Memoria RAM</a></li>
+          <li><a href="#hdd">Disco Duro</a></li>
+          <li><a href="#gpu">Tarjeta de Video</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Herramientas Recomendadas</h3>
+        <p><i class="fas fa-toolbox"></i> Kit de limpieza antiestática</p>
+        <p><i class="fas fa-temperature-high"></i> Pasta térmica premium</p>
+        <p><i class="fas fa-wind"></i> Aire comprimido sin humedad</p>
+        <p><i class="fas fa-desktop"></i> Software de diagnóstico</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>¿Necesitas ayuda?</h3>
+        <p>Si tienes dudas sobre algún componente específico, contáctanos:</p>
+        <div class="social-icons">
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+          <a href="#" aria-label="Foro técnico"><i class="fas fa-users"></i></a>
+        </div>
+        <a href="contacto.html" class="btn-contact">Consultar por Componente</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mantenimiento de Computadores | Marlon Pertuz | @unibarranquilla.edu.co</p>
+      <p>Página: Componentes del Computador</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
